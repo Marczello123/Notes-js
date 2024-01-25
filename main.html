@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+
+
+    <link rel="stylesheet" href="/main.css">
+</head>
+    <body>
+
+        <div class="menu">
+            <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+            <div class="menu-buttons">
+                <button class="add icon"><i class="fas fa-plus"></i> Add</button>
+                <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Delete all</button>
+            </div>
+        </div>
+    
+    
+        <div class="note-area">
+            <!-- <div class="note">
+    
+                <div class="note-header">
+                    <h3 class="note-title">Example of a note</h3>
+                    <button class="delete-note">
+                        <i class="fas fa-times icon"></i>
+                    </button>
+                </div>
+                <div class="note-body">
+                    Reading Terence McKenna's book was a tremendous opportunity to broaden my horizons. I'm sure one can find a lot of eye-opening and unconventional information about the structures within which we live.
+                </div>
+    
+            </div> -->
+        </div>
+    
+    
+        <div class="note-panel">
+            <h2>add note</h2>
+            <label for="category">choose category</label>
+            <select id="category" onchange="selectValue()">
+                <option value="0" disabled="" selected="">- choose category -</option>
+                <option value="1">Reading</option>
+                <option value="1">Coding</option>
+                <option value="1">Training</option>
+                <option value="1">Socializing</option>
+                <option value="1">Additionals</option>
+            </select>
+    
+            <label for="text">Put in the content of your thoughts</label>
+            <textarea id="text"></textarea>
+    
+            <p class="error">Fill up every window!</p>
+    
+            <div class="panel-buttons">
+                <button class="save icon"><i class="fas fa-save"></i> Save</button>
+                <button class="cancel icon"><i class="far fa-window-close"></i> Cancel</button>
+            </div>
+        </div>
+    
+    
+
+    
+        <script src="/main.js"></script>
+    
+    
+    </body>
+</body>
+</html>
